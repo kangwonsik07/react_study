@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+   font-family: 'Nanum Pen Script', cursive !important ;
+   font-weight: 400 !important;
+   font-style: normal !important;
+}
