@@ -31,6 +31,7 @@ function Home() {
                      <ToggleButton value="tv">TV</ToggleButton>
                   </ToggleButtonGroup>
                </div>
+
                {alignment === 'movie' ? <PosterSlider /> : <TvSlider />}
             </div>
          </Main>

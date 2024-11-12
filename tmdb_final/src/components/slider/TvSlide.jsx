@@ -19,7 +19,7 @@ function TvSlider() {
    const { tvs, loading, error } = useSelector((state) => state.tvs)
 
    useEffect(() => {
-      dispatch(fetchTVs({ category: 'now_playing', page: 1 }))
+      dispatch(fetchTVs('on_the_air'))
    }, [dispatch])
 
    if (loading) return <p>Loading...</p>
@@ -28,6 +28,7 @@ function TvSlider() {
    return (
       <>
          <Swiper slidesPerView={5} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+            {console.log('TvSlider:tvs:', tvs)}
             {tvs.map((tv) => (
                <SwiperSlide key={tv.id}>
                   <img src={`https://image.tmdb.org/t/p/w200${tv.poster_path}`} alt={tv.title} />
