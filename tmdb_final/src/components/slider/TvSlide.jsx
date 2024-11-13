@@ -28,7 +28,6 @@ function TvSlider() {
    return (
       <>
          <Swiper slidesPerView={5} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
-            {console.log('TvSlider:tvs:', tvs)}
             {tvs.map((tv) => (
                <SwiperSlide key={tv.id}>
                   <img src={`https://image.tmdb.org/t/p/w200${tv.poster_path}`} alt={tv.title} />

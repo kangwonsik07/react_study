@@ -28,7 +28,7 @@ const fetchFromApi = async (url, params = {}) => {
 // 인기, 상영중, 개봉예정 가져오기
 export const getMovies = (category = 'popular', page = 1) => {
    // 카테고리에 맞는 endpoint를 가져옴
-   console.log('fetchFromApi:getMovies:', getMovies)
+
    const endpoint = {
       popular: '/movie/popular',
       now_playing: '/movie/now_playing',
@@ -44,8 +44,6 @@ export const getMovies = (category = 'popular', page = 1) => {
 
 // 인기, 방송 중인 tv 목록 가져오기
 export const getTVs = (type, page = 1) => {
-   console.log('fetchFromApi:getTVs:', getTVs)
-   console.log('getTVs.type:', getTVs.type)
    // type에 따라 엔드포인트 동적으로 설정
    const endpoint = {
       popular: '/tv/popular',
